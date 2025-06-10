@@ -34,7 +34,7 @@ To run this game, you only need Python installed on your system.
     ```
 3.  **Run the game:**
     ```bash
-    python main.py
+    python3 main.py
     ```
 ---
 
