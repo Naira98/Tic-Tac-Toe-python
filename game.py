@@ -30,7 +30,7 @@ class Game:
             self.play_turn()
             message = ""
             if self.is_win():
-                message = f"Congratulations. {self.players[self.current_player_index].name} wins!"
+                message = f"Congratulations {self.players[self.current_player_index].name} wins!"
             elif self.is_draw():
                 message = "Game Over. It's a draw!"
                 pass
@@ -40,7 +40,7 @@ class Game:
                     self.restart_game()
                 else:
                     self.quit_game()
-                    break
+                break
             self.switch_player()
 
     def play_turn(self):
