@@ -10,7 +10,7 @@ class Player:
         while True:
             name = input("Enter your name: (Letters only) ")
             if name.isalpha():
-
+                name = name.title()
                 if name not in Player.names:
                     self.name = name
                     Player.names.append(name)
