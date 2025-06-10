@@ -36,17 +36,3 @@ class Player:
 
             else:
                 print("Error: Invalid symbol please enter one character as a symbol")
-
-    # def __str__(self):
-    #     return f"{self.name}, {self.symbol}"
-
-
-# player1 = Player()
-# player1.choose_name()
-# player1.choose_symbol()
-# print(player1)
-
-# player2 = Player()
-# player2.choose_name()
-# player2.choose_symbol()
-# print(player2)
