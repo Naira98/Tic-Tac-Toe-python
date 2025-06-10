@@ -1,3 +1,5 @@
+import os
+
 TOP_LEFT = "╔"
 TOP_RIGHT = "╗"
 BOTTOM_LEFT = "╚"
@@ -5,11 +7,12 @@ BOTTOM_RIGHT = "╝"
 HORIZONTAL = "═"
 VERTICAL = "║"
 
-class Utils():
+
+class Utils:
     def print_message_dynamically_with_border(self, message):
         width = len(message) + 4  # 4 extra spaces
         self.print_horizontal_border("TOP", width)
-        self.print_message_row( message)
+        self.print_message_row(message)
         self.print_horizontal_border("BOTTOM", width)
 
     @staticmethod
@@ -24,3 +27,7 @@ class Utils():
     @staticmethod
     def print_message_row(message):
         print(f"{globals()['VERTICAL']}  {message}  {globals()['VERTICAL']}")
+
+    @staticmethod
+    def clear_terminal():
+        os.system("cls" if os.name == "nt" else "clear")

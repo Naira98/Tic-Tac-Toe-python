@@ -19,8 +19,3 @@ class Board:
 
     def reset_board(self):
         self.board = [str(i) for i in range(1, 10)]
-
-
-# board = Board()
-# board.update_board("X", "2")
-# board.display_board()
