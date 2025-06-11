@@ -14,8 +14,10 @@ A classic **Tic-Tac-Toe game** built in Python! This project offers a **simple, 
 
 ---
 ## 🎥 Demo Video
+
+Watch a short video demonstration of the Tic-Tac-Toe Game in action:
 <video src="https://github.com/user-attachments/assets/77eac456-2767-4f40-9854-6e7a917aba91" controls autoplay loop muted width="100%"></video>
----
+
 
 ## ▶️ How to Play
 
