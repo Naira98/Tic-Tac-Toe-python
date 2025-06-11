@@ -33,6 +33,7 @@ class Game:
                 message = f"Congratulations {self.players[self.current_player_index].name} wins!"
             elif self.is_draw():
                 message = "Game Over. It's a draw!"
+                self.current_player_index = 0
                 pass
             if message:
                 choice = self.menus.display_end_game_menu(message)
@@ -86,7 +87,6 @@ class Game:
 
     def restart_game(self):
         self.board.reset_board()
-        self.current_player_index = 0
         self.play_game()
 
     def quit_game(self):
